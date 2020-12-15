@@ -1,33 +1,12 @@
+// import 'package:flowers/pages/flower_page/flower_page.dart';
+import 'package:flowers/pages/login/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: ,
-    );
-  }
-}
-
-class Home extends StatefulWidget {
-  @override
-  _HomeState createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      
-    );
-  }
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    // home: Flower(),
+    home: Login(),
+    theme: ThemeData(fontFamily: 'Exo2', canvasColor: Colors.transparent),
+  ));
 }
