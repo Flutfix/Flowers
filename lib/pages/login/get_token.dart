@@ -5,7 +5,7 @@ import 'dart:convert';
 getToken(String _phone, String _verificationCode) async {
   try {
     final String url =
-        'http://192.168.50.117/api/get-token?phone_number=8$_phone&verification_code=$_verificationCode';
+        'http:/u97705.test-handyhost.ru/flowers/public/api/get-token?phone_number=8$_phone&verification_code=$_verificationCode';
     var response = await http.get(url);
     String jsonR = response.body;
     Map<String, dynamic> jsonMap = json.decode(jsonR);

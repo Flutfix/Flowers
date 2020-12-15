@@ -4,7 +4,8 @@ import 'dart:convert';
 
 void auth(String _phone) async {
   try {
-    final String url = 'http://192.168.50.117/api/auth';
+    final String url =
+        'http://u97705.test-handyhost.ru/flowers/public/api/auth';
     Map<String, dynamic> body = Map();
     body['phone_number'] = '8$_phone';
 

@@ -4,7 +4,8 @@ import 'package:http/http.dart';
 import 'flowers_home_model.dart';
 
 Future<FlowersHome> getAllDBForFlowersHome() async {
-  String url = 'http://192.168.50.117/api/products?per_page=8&page=1';
+  String url =
+      'u97705.test-handyhost.ru/flowers/public/api/products?per_page=8&page=1';
   Response responce = await http.get(url);
 
   try {
@@ -18,7 +19,7 @@ Future<FlowersHome> getAllDBForFlowersHome() async {
 
 Future<FlowersHome> getBouqetsForFlowersHome() async {
   String url =
-      'http://192.168.50.117/api/products?per_page=8&page=1&tab=букеты';
+      'u97705.test-handyhost.ru/flowers/public/api/products?per_page=8&page=1&tab=букеты';
   Response responce = await http.get(url);
 
   try {
@@ -31,7 +32,8 @@ Future<FlowersHome> getBouqetsForFlowersHome() async {
 }
 
 Future<FlowersHome> getFlowersForFlowersHome() async {
-  String url = 'http://192.168.50.117/api/products?per_page=8&page=1&tab=цветы';
+  String url =
+      'u97705.test-handyhost.ru/flowers/public/api/products?per_page=8&page=1&tab=цветы';
   Response responce = await http.get(url);
 
   try {
